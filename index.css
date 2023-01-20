@@ -957,7 +957,7 @@ font-family: Raleway;
     justify-content: center;
     align-items: center;
     z-index: -2;
-     background-image: url("/source/cta1.png");
+     background-image: url("./source/cta1.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
