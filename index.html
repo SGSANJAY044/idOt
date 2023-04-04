@@ -1,454 +1,903 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>IDOT.Inc </title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" media="screen and (max-device-width: 900px)" href="smallscreen.css">
-        <link rel="stylesheet" href="index.scss">
-        <link rel="stylesheet" href="index.css">
-        <link rel="icon" type="image/x-icon" href="/logo.svg">
-        <script src="https://kit.fontawesome.com/788214b7f0.js" crossorigin="anonymous"></script>
-          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-          <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
-    </head>
-    <body onload="OnLoad()">
-        <div class="dd">
-            <img src="./source/Air1.png" alt="" class="yc1 px" speed="5">
-            <img src="./source/Air5.png" alt="" class="yc2 px"  speed="3">
-            <img src="./source/Air6.png" alt="" class="yc px"  speed="-2">
-            <!-- <img src="Air4.png" alt="" class="ycl px"  speed="9"> !!!-->
-             <!-- <img src="Cone_Hex0001.png" alt="" class="rc px"  speed="9">!!! -->
-              <img src="./source/Air3.png" alt="" class="bsp px"  speed="9">
-            <img src="./source/Air6.png" alt="" class="bs px"  speed="7">
-            <img src="./source/Air4.png" alt="" class="br px"  speed="2">
-            <img src="./source/Air2.png" alt="" class="rd px"  speed="-3">
-        </div>
-        <div class="tra" id="tra">
-            <video src="./source/intro.mp4"  autoplay loop muted></video>
-        </div>
-        <div class="Home-bg">
-             <section class="home-hero">
-          <div class="hero-bg">
-            <div class="hero-pattern-bg"><img class="hero-pattern-img__default va" src="source/hero-pattern-bg.png" style="height: 100vh;"></div>
-            <div class="hero-pattern-bg hmm"><img class="hero-pattern-img__default ha" src="source/des.png"></div>
-    <!-- <div class="hero-pattern-bg ha" style="top:27vh;"><img class="hero-pattern-img__default" src="source/hero-pattern-bg.png"></div>
-            <div class="hero-pattern-bg ha"style="top:54vh"><img class="hero-pattern-img__default" src="source/hero-pattern-bg.png"></div>
-            <div class="hero-pattern-bg ha"style="top:81vh"><img class="hero-pattern-img__default" src="source/hero-pattern-bg.png"></div> -->
+<!doctype html>
+<html class="no-js" lang="zxx">
 
-          </div>
-          <!-- <div class="hero-character">
-            <div class="hero-guy-1"><img class="hero-guy-1__default" src="./source/wave.svg"><img class="hero-guy-1__large" src="./source/wave.svg"></div>
-          </div> -->
-          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-<defs>
-<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-</defs>
-<g class="parallax">
-<use xlink:href="#gentle-wave" x="48" y="5" fill="#fff" />
-<!-- <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" /> -->
-<!-- <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" /> -->
-<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-</g>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>IdOt</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.svg">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/custom-animation.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+    <!-- class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s" -->
+
+    <!-- tp-header-area-start -->
+
+    <!-- pre loader area start -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <header class="d-none d-lg-block">
+        <div id="header-sticky" class="tp-header-area header-transparent pl-165 pr-165 pt-35">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="tp-logo">
+                            <a href="index.html"><img src="assets/img/logo/logo-blue.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="tp-main-menu">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li><a href="#Home">Home</a>
+                                    </li>
+                                    <li><a href="#service" onclick={}>Services</a>
+                                    </li>
+                                    <li><a href="#Stack">Stack</a>
+                                    </li>
+                                    <li><a href="#portfolio">Portfolio</a>
+                                    </li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-2 col-lg-2">
+                        <div class="tp-menu-bar text-end">
+                            <button><i class="fal fa-bars"></i></button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- tp-header-area-end -->
+
+    <!-- mobile-menu-area -->
+    <div id="header-sticky-mobile" class="tp-md-menu header-transparent d-lg-none pt-40 pb-40">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="tp-logo">
+                        <a href="#"><img src="assets/img/logo/logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile-menu-area-end -->
+
+    <!-- tp-offcanvus-area-start -->
+    <div class="tp-offcanvas-area">
+        <div class="tpoffcanvas">
+            <div class="tpoffcanvas__logo">
+                <a href="index.html">
+               <img src="assets/img/logo/logo-white.svg" alt="">
+            </a>
+            </div>
+            <div class="tpoffcanvas__close-btn">
+                <a class="close-btn" href="javascript:void(0)"><i class="fal fa-times-hexagon"></i></a>
+            </div>
+            <div class="tpoffcanvas__content d-none d-sm-block">
+                <p>We deploy world-class Creative <br> on demand.</p>
+            </div>
+            <div class="mobile-menu">
+
+            </div>
+            <div class="tpoffcanvas__contact">
+                <span>Contact us</span>
+                <ul>
+                    <li><i class="fas fa-star"></i> <a href="https://goo.gl/maps/abHegV4AoiJA6Syd8" target="_blank">Melbone
+                     st, Australia, Ny 12099</a></li>
+                    <li><i class="fas fa-star"></i> <a href="tel:8180012345678">+81 800 123 456 78</a></li>
+                    <li><i class="fas fa-star"></i> <a href="mailto:IdOtmail@gmail.com">IdOtmail@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="tpoffcanvas__input d-none d-sm-block">
+                <p>Get UPdate</p>
+                <form class="p-relative" action="#">
+                    <input type="text" placeholder="Enter mail">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+            <div class="tpoffcanvas__instagram d-none d-sm-block">
+                <p>Check Instagram POst</p>
+                <div class="tp-insta">
+                    <div class="row">
+                        <div class="col-3 col-sm-3"><a href="#"><img src="assets/img/offcanvas/insta-1.jpg" alt=""></a></div>
+                        <div class="col-3 col-sm-3"><a href="#"><img src="assets/img/offcanvas/insta-2.jpg" alt=""></a></div>
+                        <div class="col-3 col-sm-3"><a href="#"><img src="assets/img/offcanvas/insta-4.jpg" alt=""></a></div>
+                        <div class="col-3 col-sm-3"><a href="#"><img src="assets/img/offcanvas/insta-4.jpg" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-overlay"></div>
+    <!-- tp-offcanvus-area-end -->
+
+    <main>
+        <!-- tp-hero-area-start -->
+        <div class="tp-hero-area tp-hero-space p-relative z-index-1 fix" id="Home">
+            <div class="tp-hero-shape">
+                <div class="shape-circle-yellow d-none"></div>
+                <div class="shape-circle-blue"></div>
+                <div class="shape-one"><img src="assets/img/hero/shape-1.png" alt=""></div>
+            </div>
+            <div class="tp-hero-wapper">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="tp-hero-content">
+                                <div class="tp-hero-text">
+                                    <h2 class="tp-hero-title wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s">It's time to
+                                        Make a change</h2>
+                                    <p class="wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".8s">At IdOt we specialize in designing, building, shipping and scaling beautiful, <br> and best for you
+                                        all over the world.</p>
+                                    <div class="tp-hero-button mb-140 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
+                                        <a class="tp-btn mr-30" href="#">Visit Case Studies</a>
+                                        <a class="tp-btn-grey" href="#">About IdOt <i class="far fa-arrow-right"></i></a>
+                                    </div>
+                                    <div class="tp-hero-social pb-30 wow tpfadeIn" data-wow-duration=".7s" data-wow-delay="1.2s">
+                                        <div class="tp-hero-social bp-hero-social">
+                                            <a class="social-icon-1" href="#">
+                                 <i class="fab fa-facebook-f social-icon-1"></i><span>Facebook</span>
+                              </a>
+                                            <a class="social-icon-3" href="#"><i
+                                    class="fab fa-youtube social-icon-3"></i><span>youtube</span></a>
+                                            <a class="social-icon-2" href="#"><i
+                                    class="fab fa-twitter social-icon-2"></i><span>twitter</span></a>
+                                            <a class="social-icon-4" href="#"><i
+                                    class="fab fa-behance social-icon-4"></i><span>behance</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5">
+                            <div class="tp-hero-big-img wow fadeInRight" data-wow-duration=".7s" data-wow-delay="1.2s">
+                                <img src="assets/img/hero/hero-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- tp-hero-area-end -->
+
+        <!--creative-area-start -->
+        <div class="p-relative">
+            <div class="shape-two z-index-1">
+                <img src="assets/img/hero/shape-2.png" alt="">
+            </div>
+            <div class="tp-creative-area p-relative black-bg pt-140 pb-135 fix">
+                <div class="circle-animation testimonial">
+                    <span class="tp-circle-1"></span>
+                    <span class="tp-circle-2"></span>
+                </div>
+                <div class="creative-shape-img">
+                    <img src="assets/img/creative/creative-hand.png" alt="">
+                </div>
+                <div class="creative-shape-img-2">
+                    <img src="assets/img/creative/creative-circle-img.png" alt="">
+                </div>
+                <div class="container creative-z-index ">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tp-creative-box text-center">
+                                <div class="tp-creative-content mb-110">
+                                    <h4 class="tp-creative-title">We deploy world-class <b>Creative Design team</b>. We deliver you the best Websites, Mobile Applications, Graphic designs, Animations and Social Media Marketing strategies.</h4>
+                                </div>
+                                <div class="tp-play-button mb-150">
+                                    <a class="popup-video" href="./assets/img/video/intro.mp4"><i
+                              class="fal fa-play"></i></a>
+                                    <span>Play Take a look behind the scenes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="creative-box pl-40 pr-40">
+                        <div class="row gx-5">
+                            <div class="col-lg-4 col-md-12 col-xs-12 mb-30">
+                                <div class="tp-creative-item wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s">
+                                    <div class="tp-creative-yellow d-flex align-items-center">
+                                        <div class="tp-creative-icon mr-35">
+                                            <i class="flaticon-satisfaction"></i>
+                                        </div>
+                                        <div class="counter-text">
+                                            <span>100%</span>
+                                            <p class="m-0">Client Satisfaction</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-xs-12 mb-30">
+                                <div class="tp-creative-item tp-creative-blue wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".8s">
+                                    <div class="tp-creative-yellow d-flex align-items-center">
+                                        <div class="tp-creative-icon mr-35">
+                                            <i class="flaticon-clipboard"></i>
+                                        </div>
+                                        <div class="counter-text">
+                                            <span>500+</span>
+                                            <p class="m-0">Coustomers</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-xs-12 mb-30">
+                                <div class="tp-creative-item tp-creative-pink wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
+                                    <div class="tp-creative-yellow d-flex align-items-center">
+                                        <div class="tp-creative-icon mr-35">
+                                            <i class="flaticon-setting"></i>
+                                        </div>
+                                        <div class="counter-text">
+                                            <span>1800+</span>
+                                            <p class="m-0">UI Designs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--creative-area-end -->
+ <!--service-area-start -->
+ <div class="tp-service-area pb-90 pt-100 grey-bg" id="service">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-10">
+                <div class="tp-service-section-box text-center pb-60">
+                    <h5 class="tp-subtitle pb-10">Our Services</h5>
+                    <h2 class="tp-title-sm">Managing you business with our
+                        <span class="tp-section-highlight">
+                   best service
+                   <svg width="266" height="12" viewBox="0 0 266 12" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L266 12H0V0Z" fill="#FFDC60" />
+                   </svg>
+                </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">
+                <div class="tp-sv-border-effect sv-border-effect-1">
+                    <div class="tp-service-item-four sv-color-2 mb-30">
+                        <div class="tp-service-item-four__img  mb-40">
+                            <img src="assets/img/service/service4.1.png" alt="">
+                        </div>
+                        <div class="tp-service-item-four__title">
+                            <h3 class="tp-sv-sm-title"><a href="#">Web & Mobile Development</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6  wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.1s">
+                <div class="tp-sv-border-effect sv-border-effect-4">
+                    <div class="tp-service-item-four sv-color-5 mb-30">
+                        <div class="tp-service-item-four__img mb-40">
+                            <img src="assets/img/service/service4.4.png" alt="">
+                        </div>
+                        <div class="tp-service-item-four__title">
+                            <h3 class="tp-sv-sm-title"><a href="#">User Interface Design
+                         </a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6  wow tpfadeUp" data-wow-duration="1s" data-wow-delay="1.1s">
+                <div class="tp-sv-border-effect sv-border-effect-5">
+                    <div class="tp-service-item-four sv-color-6 mb-30">
+                        <div class="tp-service-item-four__img mb-40">
+                            <img src="assets/img/service/service4.5.png" alt="">
+                        </div>
+                        <div class="tp-service-item-four__title">
+                            <h3 class="tp-sv-sm-title"><a href="#">Marketing and
+                         Communication</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6  wow tpfadeUp" data-wow-duration="1s" data-wow-delay="1.2s">
+                <div class="tp-sv-border-effect sv-border-effect-6">
+                    <div class="tp-service-item-four sv-color-7 mb-30">
+                        <div class="tp-service-item-four__img mb-40">
+                            <img src="assets/img/service/service4.6.png" alt="">
+                        </div>
+                        <div class="tp-service-item-four__title">
+                            <h3 class="tp-sv-sm-title"><a href="#">Animations & Graphics</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--service-area-end -->
+        <!--bran-area start -->
+        <div class="tp-brand-area pt-135 grey-bg" id="Stack">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tp-brand-section text-center pb-60">
+                            <h4 class="tp-brand-title">We are Already Build Solution for...</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-brand-slider-section">
+                    <div class="swiper-container brand-slider-active">
+                        <div class="swiper-wrapper d-flex align-items-center">
+                            <div class="swiper-slide">
+                                <div class="tp-brand-icon text-center">
+                                    <img src="assets/img/brand/brand-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-brand-icon text-center">
+                                    <img src="assets/img/brand/brand-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-brand-icon text-center">
+                                    <img src="assets/img/brand/brand-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-brand-icon text-center">
+                                    <img src="assets/img/brand/brand-7.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-brand-icon text-center">
+                                    <img src="assets/img/brand/brand-5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-brand-icon text-center">
+                                    <img src="assets/img/brand/brand-6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-brand-icon text-center">
+                                    <img src="assets/img/brand/brand-4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--bran-area end -->
+
+        <!-- service-area-start -->
+        <div class="tp-service-area pt-190 pb-100 grey-bg p-relative fix">
+            <div class="tp-sv-shape-img z-index-1">
+                <img src="assets/img/service/service-shape.png" alt="">
+            </div>
+            <div class="circle-animation service">
+                <span class="tp-circle-1"></span>
+                <span class="tp-circle-2"></span>
+            </div>
+            <div class="circle-animation service-two">
+                <span class="tp-circle-skye"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="tp-service-section-box mb-30 wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s">
+                            <h5 class="tp-subtitle pb-10">What We Do?</h5>
+                            <h2 class="tp-title">Experts in every aspect lifecycle </h2>
+                            <a class="tp-btn" href="#">View All Services</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="tp-sv-box  wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".8s">
+                            <div class="tp-service-item d-flex mb-30">
+                                <div class="tp-sv-img">
+                                    <img src="assets/img/service/service-1.png" alt="">
+                                </div>
+                                <div class="tp-sv-content pl-60">
+                                    <h3 class=" tp-sv-title mb-35"><a href="#">Ideation & Evaluation</a></h3>
+                                    <p class="mb-30">At IdOt we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast</p>
+                                    <p>At IdOt we specialize in designing, building, shipping and scaling...</p>
+                                    <div class="tp-sv-link mt-35">
+                                        <a href="#"><i class="far fa-arrow-right"></i> Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="tp-sv-box wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
+                            <div class="tp-service-item d-flex mb-30">
+                                <div class="tp-sv-img">
+                                    <img src="assets/img/service/service-2.png" alt="">
+                                </div>
+                                <div class="tp-sv-content pl-60">
+                                    <h3 class="tp-sv-title mb-35"><a href="#">Design, Development</a></h3>
+                                    <p class="mb-30">At IdOt we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast</p>
+                                    <p>At IdOt we specialize in designing, building, shipping and scaling...</p>
+                                    <div class="tp-sv-link mt-35">
+                                        <a href="#"><i class="far fa-arrow-right"></i> Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="tp-sv-box wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
+                            <div class="tp-service-item d-flex mb-30">
+                                <div class="tp-sv-img">
+                                    <img src="assets/img/service/service-3.png" alt="">
+                                </div>
+                                <div class="tp-sv-content pl-60">
+                                    <h3 class=" tp-sv-title mb-35"><a href="#">Online Marketing</a></h3>
+                                    <p class="mb-30">At IdOt we specialize in designing, building, shipping and scaling beautiful, usable products with blazing-fast</p>
+                                    <p>At IdOt we specialize in designing, building, shipping and scaling...</p>
+                                    <div class="tp-sv-link mt-35">
+                                        <a href="#"><i class="far fa-arrow-right"></i> Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- service-area-end -->
+
+        <!-- project-area-start -->
+        <div class="tp-project-area p-relative pt-130 pb-100" id="portfolio">
+            <div class="tp-project-shape">
+                <img src="assets/img/project/project-shape.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row align-items-center mb-15">
+                    <div class="col-xl-5 col-lg-12 col-md-12">
+                        <div class="tp-project-section-box">
+                            <h5 class="tp-subtitle">Our Project</h5>
+                            <h2 class="tp-title">Creative work. </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-tab-main">
+                    <div class="row gx-1  ">
+                        <div class="col-xl-6 col-lg-12">
+                            <div class="tp-project-box mb-20">
+                                <div class="tp-project-img fix mb-45">
+                                    <img class="w-100" src="assets/img/project/brand-1.jpg" alt="">
+                                </div>
+                                <div class="tp-project-content ml-20">
+                                    <h2 class="pro-lg-title"><a href="#">Hosting Website Design</a></h2>
+                                    <p>At IdOt we specialize in designing, building, shipping...</p>
+                                    <a class="tp-btn-sm" href="portfolio.html">View Our portfolio <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12">
+                            <div class="row">
+                                <div class=" col-xl-12 col-lg-12">
+                                    <div class="tp-project-box-sm d-flex align-items-center mb-20">
+                                        <div class="tp-project-sm-img fix ml-25 mr-35">
+                                            <img src="assets/img/project/app-2.jpg" alt="">
+                                        </div>
+                                        <div class="tp-project-sm-content">
+                                            <h3 class="pro-sm-title"><a href="#">Medical Website</a></h3>
+                                            <p>At IdOt we specialize in the most designing, building, shipping...</p>
+                                            <a class="tp-btn-white-sm" href="#">Case Studies <i
+                                  class="far fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12">
+                                    <div class="tp-project-box-sm d-flex align-items-center">
+                                        <div class="tp-project-sm-img fix ml-25 mr-35">
+                                            <img src="assets/img/project/project-4.jpg" alt="">
+                                        </div>
+                                        <div class="tp-project-sm-content">
+                                            <h3 class="pro-sm-title"><a href="#">Pet Care Website</a></h3>
+                                            <p>At IdOt we specialize in the most designing, building, shipping...</p>
+                                            <a class="tp-btn-white-sm" href="#">Case Studies <i
+                                  class="far fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- project-area-end -->
+
+        <!-- testimonial-area start-->
+        <div class="tp-testimonial-area black-bg pt-130 pb-130 fix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="tp-testimonial-section-box text-center pb-25">
+                            <h5 class="tp-subtitle">Client Testimonial</h5>
+                            <h2 class="tp-title tp-white-text">Customer feedback</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-testimonial-slider-section d-flex justify-content-center mb-50">
+                    <div class="swiper-container testimonial-slider-active">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tp-testimonial-item">
+                                    <div class="tp-testi-meta d-flex justify-content-between mb-40">
+                                        <div class="tp-testi-icon-box d-flex align-items-center">
+                                            <div class="tp-testi-img mr-20"><img src="assets/img/testimonial/testi-1.png" alt="">
+                                            </div>
+                                            <div class="tp-testi-client-position">
+                                                <h3>Darrell Steward</h3>
+                                                <h6>Founder of (Rirax)</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tp-testi-ratting">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tp-testi-p-text">
+                                        <p>"IdOt is an amazing team of professionals who are experts in their field.Working with IdOt has been an absolute pleasure. We highly recommend IdOt for anyone in need of top-notch web development services."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-testimonial-item">
+                                    <div class="tp-testi-meta d-flex justify-content-between mb-40">
+                                        <div class="tp-testi-icon-box d-flex align-items-center">
+                                            <div class="tp-testi-img mr-20"><img src="assets/img/testimonial/testi-2.jpg" alt="">
+                                            </div>
+                                            <div class="tp-testi-client-position">
+                                                <h3>Floyd Miles</h3>
+                                                <h6>CEO of (Orix)</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tp-testi-ratting">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tp-testi-p-text">
+                                        <p>Working with IdOt has been an absolute pleasure. They are highly skilled at what they do and their attention to detail is impeccable.We highly recommend IdOt for anyone in need of top-notch web development services.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-testimonial-item">
+                                    <div class="tp-testi-meta d-flex justify-content-between mb-40">
+                                        <div class="tp-testi-icon-box d-flex align-items-center">
+                                            <div class=" tp-testi-img mr-20"><img src="assets/img/testimonial/testi-3.png" alt="">
+                                            </div>
+                                            <div class="tp-testi-client-position">
+                                                <h3>Albert Flores</h3>
+                                                <h6>Founder of (Rirax)</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tp-testi-ratting">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tp-testi-p-text">
+                                        <p>IdOt was very diligent, polite and extremely customer oriented. I think Monika will go far with that attitude and We highly recommend IdOt to anyone looking for reliable and skilled app developers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-testimonial-slider-section-2 d-flex justify-content-center">
+                    <div class="swiper-container testimonial-slider-active-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tp-testimonial-item">
+                                    <div class="tp-testi-meta d-flex justify-content-between mb-40">
+                                        <div class="tp-testi-icon-box d-flex align-items-center">
+                                            <div class="tp-testi-img mr-20"><img src="assets/img/testimonial/testi-4.jpg" alt="">
+                                            </div>
+                                            <div class="tp-testi-client-position">
+                                                <h3>Dianne Russell</h3>
+                                                <h6>CEO of (Orix)</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tp-testi-ratting">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tp-testi-p-text">
+                                        <p>IdOt is an outstanding tech company that we have had the pleasure of working with on several projects. They are reliable, professional, and extremely knowledgeable in their field.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-testimonial-item">
+                                    <div class="tp-testi-meta d-flex justify-content-between mb-40">
+                                        <div class="tp-testi-icon-box d-flex align-items-center">
+                                            <div class="tp-testi-img mr-20"><img src="assets/img/testimonial/testi-5.jpg" alt="">
+                                            </div>
+                                            <div class="tp-testi-client-position">
+                                                <h3>Jerome Bell</h3>
+                                                <h6>CEO of (Orix)</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tp-testi-ratting">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tp-testi-p-text">
+                                        <p>IdOt is a very talented designer and his most valuable role is to teach design in a professional way. He trained design courses under my company Chartered Professional</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-testimonial-item">
+                                    <div class="tp-testi-meta d-flex justify-content-between mb-40">
+                                        <div class="tp-testi-icon-box d-flex align-items-center">
+                                            <div class=" tp-testi-img mr-20"><img src="assets/img/testimonial/testi-6.jpg" alt="">
+                                            </div>
+                                            <div class="tp-testi-client-position">
+                                                <h3>Floyd Miles</h3>
+                                                <h6>CEO of (Orix)</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tp-testi-ratting">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tp-testi-p-text">
+                                        <p>Absolutely amazing. we can't believe how incredible this turned out. Yetta Thomas is a true professional. he is such a honest, decent and reliable. He always provide good service
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-testimonial-item">
+                                    <div class="tp-testi-meta d-flex justify-content-between mb-40">
+                                        <div class="tp-testi-icon-box d-flex align-items-center">
+                                            <div class=" tp-testi-img mr-20"><img src="assets/img/testimonial/testi-4.jpg" alt="">
+                                            </div>
+                                            <div class="tp-testi-client-position">
+                                                <h3>Robert Fox</h3>
+                                                <h6>CEO of (Orix)</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tp-testi-ratting">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tp-testi-p-text">
+                                        <p>IdOt நிறுவனம்  வலைத்தள வடிவமைப்பு, பயன்பாடு வடிவமைப்புகளில் உள்ள அற்புத பரிசுத்திரமான பணியாளர்கள் மூலம் நடைபெறும் தொழில்நுட்ப திறன் போன்ற தகுதிகள் உள்ளன.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tp-testimonial-item">
+                                    <div class="tp-testi-meta d-flex justify-content-between mb-40">
+                                        <div class="tp-testi-icon-box d-flex align-items-center">
+                                            <div class=" tp-testi-img mr-20"><img src="assets/img/testimonial/testi-5.jpg" alt="">
+                                            </div>
+                                            <div class="tp-testi-client-position">
+                                                <h3>Floyd Miles</h3>
+                                                <h6>CEO of (Orix)</h6>
+                                            </div>
+                                        </div>
+                                        <div class="tp-testi-ratting">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tp-testi-p-text">
+                                        <p>We have been working with IdOt for several years now, and they have become an integral part of our business. They are always available to answer our questions and help us with any technical issues that arise.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- testimonial-area-end -->
+
+        <!-- news-letter-area-start -->
+        <div class="tp-news-letter-area pb-140 pt-100 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".4s" id="contact">
+            <div class="container">
+                <div class="tp-news-letter-box p-relative" data-background="assets/img/news/news-shape.png">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-8 col-12  ">
+                            <div class="tp-news-wrapper pl-90 z-index-1">
+                                <div class="tp-news-letter-section-box">
+                                    <h5 class="subtitle-secondary-color">Get update</h5>
+                                    <h2 class="tp-title tp-white-text">Get latest updates and deals</h2>
+                                </div>
+                                <div class="tp-news-button p-relative">
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter your mail">
+                                        <button class="tp-submit-button tp-btn-yellow-semilar" type="submit">Subscribe <i
+                                 class="far fa-arrow-right"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 text-lg-end col-md-4  ">
+                            <div class="tp-news-letter-img">
+                                <img src="assets/img/news/news-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tp-news-shape-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="p-relative">
+        <button class="scrollTop d-none d-md-block" data-target="html">
+         <div class="tp-backto-top">
+            <svg width="16" height="58" viewBox="0 0 16 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path
+                  d="M8.70711 0.292892C8.31659 -0.0976295 7.68342 -0.0976296 7.2929 0.292892L0.928934 6.65685C0.53841 7.04738 0.53841 7.68054 0.928934 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41422L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 58L9 1L7 1L7 58L9 58Z"
+                  fill="#292930" />
+            </svg>
+         </div>
+      </button>
+        <div class="footer-clip-shape">
+            <svg width="1918" height="98" viewBox="0 0 1918 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+               d="M435.5 54L0 1V0L1917.5 1L1309 75.5C1263 82 1178.75 88.6471 1176.5 89C1116 98.5 958.667 98.3333 885.5 97C874.167 96.5 856.5 95.5 850.5 95.5C793.5 95.5 554.667 69.3333 435.5 54Z"
+               fill="white" />
          </svg>
+        </div>
+        <div class="tp-clip-height-one"></div>
+        <div class="tp-clip-height-two"></div>
+        <div class="tp-footer-area tp-footer-space black-bg p-relative fix pt-0">
+            <div class="tp-footer-border-shape d-none"></div>
+            <div class="tp-footer-border-shape-two"></div>
+            <div class="circle-animation footer-animation d-none d-md-block">
+                <span class="tp-circle-3"></span>
+            </div>
+            <div class="container">
+                <div class="tp-footer-widget wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".5s">
+                    <div class="row align-items-center">
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-12">
+                            <div class="tp-footer-top">
+                                <h5 class="tp-footer-title">More than 10 years in the game and we're <br> just getting started. 🤝
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-12">
+                            <div class="tp-footer-button text-start text-md-end">
+                                <a class="tp-btn" href="#">Available for new Project<i class="far fa-arrow-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tp-copyright-area pb-90 wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">
+                <div class="container">
+                    <div class="tp-copyright-box align-items-center">
+                        <div class="row align-items-center">
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-12">
+                                <div class="tp-copyright-text z-index-1">
+                                    <p class="m-0">© 2022 Creative Agency , All Right Receved.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-7 col-md-7 col-12">
+                                <div class="tp-copyright-right text-md-end text-start">
+                                    <a href="#">Support</a>
+                                    <a href="#">Privacy policy</a>
+                                    <a href="#">Tterms and conditions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tp-copyright-logo-box">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
+                                <div class="tp-copyright-logo mt-35">
+                                    <a href="index.html"><img src="assets/img/logo/logo-blue.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-12">
+                                <div class="tp-copyright-social text-md-end mt-25">
+                                    <a href="https://www.linkedin.com/company/idot-inc/mycompany/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.facebook.com/idotinc/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/idot_inc/"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area-end -->
 
-        </section>
-        </div>
-        <!-- <img src="kec.png" alt="" class="Home-bg" id="Home">!!! -->
-        <div class="outnav" id="stnav" >
-            <div class="nav">
-                <img src="./source/logo.png" alt="">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220" class="navbg">
-  <path fill="#ffffff" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,117.3C640,117,800,139,960,133.3C1120,128,1280,96,1360,80L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-</svg>!!! -->
-                <div class="navitems cl-effect-3" id="nav">
-                    <div onclick="Hscroll()">Home</div>
-                    <div onclick="Ascroll()">About</div>
-                    <div onclick="Wscroll()">Servies</div>
-                    <div onclick="Tscroll()">Tecnologies</div>
-                    <div onclick="Pscroll()">Portfolio</div>
-                    <div onclick="Cscroll()">Contact</div>
-                    <div style="overflow-y:hidden;" class="t3"><svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="40" onclick="hmc()">
-  <path
-        class="line top"
-        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-  <path
-        class="line middle"
-        d="m 20,50 h 40 " id="middle"/>
-  <path
-        class="line bottom"
-        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-</svg></div>
-                </div>
-                <div style="overflow-y:hidden;" id="Small-ham"class="t3"><svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="40" onclick="popup()">
-                    <path
-                          class="line top"
-                          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-                    <path
-                          class="line middle"
-                          d="m 20,50 h 40 " id="middle"/>
-                    <path
-                          class="line bottom"
-                          d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-                  </svg></div>
-            </div>
-        </div>
-        <div class="smallscreen-popup" id="pop">
-            <i class="fa fa-times fa"aria-hidden="true" onclick="popclose()"></i>
-                    <div onclick="Hscroll()">Home</div>
-                    <hr style="width: 10%;background: #F49414;">
-                    <div onclick="Ascroll()">About</div>
-                    <hr style="width: 10%;background: #F49414;">
-                    <div onclick="Wscroll()">Servies</div>
-                    <hr style="width: 10%;background: #F49414;">
-                    <div onclick="Pscroll()">Portfolio</div>
-                    <hr style="width: 10%;background: #F49414;">
-                    <div onclick="Cscroll()">Contact</div>
-        </div>
-        <div>
-            <div class="sidediv-bl" id="sidebg"></div>
-            <div class="sidebg" id="side-bg"></div>
-            <div class="sidediv" id="sidenav">
-                    <div class="logo-sd"><i class="fa fa-times fa-2xl"aria-hidden="true" onclick="hmk()"></i></div>
-                    <div class="content-sd">Extremity direction existence as dashwoods do up. Securing marianne led welcomed offended but offering six raptures.</div>
-                    <div class="img-sd"> <video src="./source/Idot Concept Intro.mp4"  autoplay loop muted></video></div>
-                    <div class="contact-sd">
-                        <div class="C-sd-head">ADDRESS</div>
-                        <div class="C-sd-content">Technology Business Incubator , Kongu Engineering College , Perundurai , Erode - 638 060</div>
-                    </div>
-                    <div class="follow-sd">
-                        <div class="F-sd-head">FOLLOW US</div>
-                        <div class="F-sd-content">
-                            <div>
-                                <a href=""></a>
-                                <i class="fa fa-whatsapp fa-2xl" aria-hidden="true" style="color: #25D366;"></i>
-                            </div>
-                            <div>
-                                <a href="https://www.linkedin.com/company/idot-inc/mycompany/"></a>
-                                <i class="fa fa-linkedin fa-2xl" aria-hidden="true" style="color:#0077b5;"></i>
-                            </div>  
-                            <div>
-                                <a href="https://instagram.com/idot_inc?igshid=YmMyMTA2M2Y="></a>
-                                <i class="fa fa-instagram fa-2xl" aria-hidden="true"  style=" background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-                                -webkit-background-clip: text;
-                                        /* Also define standard property for compatibility */
-                                        background-clip: text;
-                                -webkit-text-fill-color: transparent;"></i>
-                            </div>
-                            <div>
-                                <a href="https://www.facebook.com/idotinc?mibextid=ZbWKwL"></a>
-                                <i class="fa fa-facebook fa-2xl" aria-hidden="true" style="color: #3b5998;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cc-sd"></div>
-            </div>
-        </div>
-        <div class="hero-main">
-            <div class="hero-home">
-                <div class="H-head" data-aos="zoom-in" >It's time to Make a change</div>
-                <div class="H-sub" data-aos="zoom-in">Let's help discover the best for you all over the world.</div>
-                <div class="H-button" id="Button" data-aos="zoom-in" onclick="Ascroll()">Get Started</div>
-            </div>
-        </div>
-        <!-- <div class="coverup"></div> -->
-        <img src="source/output-onlinegiftools.gif" alt="" id="GIF"class="cp-img" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <div class="out-about" id="About">
-                <img src="source/about-img.png" alt="" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
-            <div class="About"    data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                <div class="H-about">
-                    <div class="A-main">Something </div>
-                    <div class="A-title">About Us</div>
-                    <!-- <div class="A-img"></div> -->
-                </div>
-                <div class="A-br"></div>
-                <div class="A-sbr"></div>
-                <div class="C-about">
-                    <div class="A-content">IdOt is a pack of creative thinkers, designers and techies who are constantly delivering exceptional products for our customers.</div>
-                    <div class="A-content">Idot adopts and works with you to craft products rich with personality and detail according to the customer’s wish..</div>
-                    <div class="A-content">With a total combination of polished methodology and shocking inventiveness abilities, our master planners can build up a splendid profile for your business in the online world.</div>
-                    <div class="A-content">We deliver you the best Websites, Mobile Applications, Graphic designs, Animations and Social Media Marketing strategies.</div>
-                </div>
-            </div>
-        </div>
-        <div class="CTA">
-            <div class="H-cta" data-aos="fade-down" data-aos-duration="1000">Call To Action</div>
-            <div class="C-cta" data-aos="fade-up"   >IdOt provides the world with tremendous outcome in the sphere of Web development, Android and iOS Applications, Graphic designs, Animations and Social Media Marketing Strategies.</div>
-            <button class="B-cta " data-aos="fade-down" onclick="Cscroll()">Call To Action</button>
-            <div class="ctablack"></div>
-        </div>
-        <div class="WWD" id="WWD">
-            <div class="W-head" data-aos="zoom-in-up">What We Do</div>
-            <div class="W-content">
-                <div class="W-C-row">
-                    <div class="W-container" data-aos="fade-left">
-                        <div class="W-img" ><img src="source/web.gif" alt=""></div>
-                        <div class="W-title">Web Development</div>
-                        <div class="W-info">We offer highly flexible and customized web designs at best prices.</div>
-                    </div>
-                    <div class="W-container" data-aos="fade-down">
-                        <div class="W-img"><img src="source/APP.gif" alt=""></div>
-                        <div class="W-title">Android & iOS Applications</div>
-                        <div class="W-info">An application is not all about Technology. Our products are coined with the motto “Ease of use”. </div>
-                    </div>
-                    <div class="W-container" data-aos="fade-right">
-                        <div class="W-img"><img src="source/SOM.gif" alt=""></div>
-                        <div class="W-title">Social Media Marketing</div>
-                        <div class="W-info">We create our clients’ pages filled with positive vibrant emotions which attracts the users towards you.</div>
-                    </div>
-                </div>
-                <div class="W-C-row" id="ww2" style="width:60%;">
-                    <div class="W-container" data-aos="fade-left">
-                        <div class="W-img"><img src="source/GD.gif" alt=""></div>
-                        <div class="W-title">Graphic designs</div>
-                        <div class="W-info">We drive you across the murky waters of creativity. We provide our works filled with tender and dashing looks.</div>
-                    </div>
-                    <div class="W-container" data-aos="fade-right">
-                        <div class="W-img"><img src="source/animation.gif" alt=""></div>
-                        <div class="W-title">Animations</div>
-                        <div class="W-info">Our animation is an art of movements towards which we are drawn. </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="test-container" id="test" >
-            <div class="T-test"  data-aos="zoom-in-up">Testimonials</div>
-            <div class="main-test">
-               <div class="horizontal-slider">
-  <ul class="h-items">
-    <li> 
-        <div class="testout">
-                     <div style="position:relative; overflow: hidden;"><div class="testin" data-aos="fade"
-     data-aos-duration="500">
-                        <div class="H-test">Walter White</div>
-                          <div><div class="testimg" style="background: url(./source/PRIN.png);"></div></div>
-                        <div class="C-test">
-                            We guarantee that our customers are constantly happy with our work..
-                        </div>
-                    </div></div>
-                      <div style="position:relative; overflow: hidden;"><div class="testin"  data-aos="fade" 
-     data-aos-duration="500">
-                        <div class="H-test">Walter White</div>
-                          <div><div class="testimg" style="background: url(./source/Kannan.jpeg);"></div></div>
-                        <div class="C-test">
-                            We guarantee that our customers are constantly happy with our work..
-                        </div>
-                    </div></div>
-                </div>
-    </li>
-    <li> 
-        <div class="testout" >
-                     <div style="position:relative; overflow: hidden;"><div class="testin" data-aos="fade"
-     data-aos-duration="500">
-                        <div class="H-test">Walter White</div>
-                          <div><div class="testimg" style="background: url(./source/CEO.jpg);"></div></div>
-                        <div class="C-test">
-                            We guarantee that our customers are constantly happy with our work..
-                        </div>
-                    </div></div>
-                      <div style="position:relative; overflow: hidden;"><div class="testin" data-aos="fade"
-     data-aos-duration="500">
-                        <div class="H-test">Walter White</div>
-                          <div><div class="testimg"></div></div>
-                        <div class="C-test">
-                        We guarantee that our customers are constantly happy with our work..
-                        </div>
-                    </div></div>
-                </div>
-    </li>
-    <li>
-         <div class="testout">
-                    <div style="position:relative; overflow: hidden;"><div class="testin" data-aos="fade"
-     data-aos-duration="500">
-         <div class="H-test">Walter White</div>
-         <div><div class="testimg"></div></div>
-         <div class="C-test">
-                                We guarantee that our customers are constantly happy with our work..
-                            </div>
-                    </div></div>
-                      <div style="position:relative; overflow: hidden;"><div class="testin" data-aos="fade"
-     data-aos-duration="500">
-                        <div class="H-test">Walter White</div>
-                          <div><div class="testimg"></div></div>
-                        <div class="C-test">
-                            We guarantee that our customers are constantly happy with our work..
-                        </div>
-                    </div></div>
-                </div>
-    </li>
-  </ul>
-  <div class="h-controlls">
-    <span class="prev">
-    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-    </span>
-    <span class="next">
-    <i class="fa fa-chevron-right" aria-hidden="true"></i>
-    </span>
-  </div>
-</div> 
-            </div>
-        </div>
-        <div class="tecnologies" id="Tech">
-            <div class="H-tech"  data-aos="zoom-in-up">Technologies we use</div>
-            <div class="C-tech">
-                        <div class="E-tech" data-aos="flip-left" >
-                            <div class="tech-lf" ><img src="./source/java.png" alt=""></div>
-                            <div class="tech-rt" ><img src="./source/javascript.png" alt=""></div>
-                        </div>
-                         <div class="E-tech" data-aos="flip-left">
-                            <div class="tech-lf"><img src="./source/mongo.png" alt=""></div>
-                            <div class="tech-rt"><img src="./source/mysql.png" alt=""></div>
-                        </div>
-                         <div class="E-tech" data-aos="flip-left">
-                            <div class="tech-lf"><img src="./source/reactjs.png" alt=""></div>
-                            <div class="tech-rt"><img src="./source/angularjs.png" alt=""></div>
-                        </div>
-                         <div class="E-tech"  data-aos="flip-left">
-                            <div class="tech-lf"><img src="./source/html.png" alt=""></div>
-                            <div class="tech-rt"><img src="./source/css3.png" alt=""></div>
-                        </div>
-                         <div class="E-tech"  data-aos="flip-left">
-                            <div class="tech-lf"><img src="./source/1.png" alt=""></div>
-                            <div class="tech-rt"><img src="./source/2.png" alt=""></div>
-                        </div>
-                         <div class="E-tech"  data-aos="flip-left">
-                            <div class="tech-lf"><img src="./source/3.png" alt=""></div>
-                            <div class="tech-rt"><img src="./source/4.png" alt=""></div>
-                        </div>
-                        <div class="E-tech"  data-aos="flip-left">
-                           <div class="tech-lf"><img src="./source/angularjs.png" alt=""></div>
-                           <div class="tech-rt"><img src="./source/css3.png" alt=""></div>
-                        </div>
-                        <div class="E-tech"  data-aos="flip-left">
-                           <div class="tech-lf"><img src="./source/html5.png" alt=""></div>
-                           <div class="tech-rt"><img src="./source/nodejs.png" alt=""></div>
-                        </div>
-                        <div class="E-tech"  data-aos="flip-left">
-                           <div class="tech-lf"><img src="./source/reactjs.png" alt=""></div>
-                           <div class="tech-rt"><img src="./source/3.png" alt=""></div>
-                       </div>
-                       <div class="E-tech"  data-aos="flip-left">
-                           <div class="tech-lf"><img src="./source/javascript.png" alt=""></div>
-                           <div class="tech-rt"><img src="./source/mongo.png" alt=""></div>
-                        </div>
-                        <div class="E-tech"  data-aos="flip-left">
-                           <div class="tech-lf"><img src="./source/5.png" alt=""></div>
-                           <div class="tech-rt"><img src="./source/7.png" alt=""></div>
-                        </div>
-                        <div class="E-tech"  data-aos="flip-left">
-                           <div class="tech-lf"><img src="./source/4.png" alt=""></div>
-                           <div class="tech-rt"><img src="./source/6.png" alt=""></div>
-                        </div>
-            </div>
-        </div>
-        <div class="portfolio" id="Portfolio">
-            <div class="portra" id="pro"></div>
-             <div class="P-head"  data-aos="zoom-in-up">Portfolio</div>
-             <div class="P-row" id="row1">
-                <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/1_2.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                  <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/2_1.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                  <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/royalcakes.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                  <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/ga.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                 <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/aayuthaeluthu.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                 <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/cer1.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                 <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/chillbyte.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-             </div>
-               <div class="P-row" style="margin-top:5vh;" id="row2">
-                <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/ck_3.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                  <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/FNH2.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/2_4.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                  <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/chillbyte.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                 <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/rwp.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                 <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/2_3.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-                 <div class="P-box" style="background: url(./source/wetransfer_1_2-jpg_2022-10-12_1215/srt.jpg);" data-aos="zoom-out" data-aos-duration="1200">
-                </div>
-             </div>
-             <div class="more"><a href="portfolio.html">more</a></div>
-           </div> 
-           <div class="footer" id="footer">
-               <div class="F-content">
-                <div class="FF-LS">
-                    <img src="./source/logo.png" alt="" class="FF-logo">
-                    <div class="F-S"> <a href="">
-                                <i class="fa fa-whatsapp fa-2xl" aria-hidden="true"></i>
-                    </a>
-                            <a href="https://www.facebook.com/idotinc?mibextid=ZbWKwL">
-                                <i class="fa fa-facebook fa-2xl" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://instagram.com/idot_inc?igshid=YmMyMTA2M2Y=">
-                                <i class="fa fa-instagram fa-2xl" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/idot-inc/mycompany/">
-                                <i class="fa fa-linkedin fa-2xl" aria-hidden="true"></i>
-                            </a></div>
-                </div>
-                <div class="FF-C">
-                    <div class="FF-C-H">Company</div>
-                    <div onclick="Hscroll()">About</div>
-                    <div onclick="Pscroll()">Portfolio</div>
-                    <div onclick="Pscroll()">Products</div>
-                </div>
-                 <div class="FF-C">
-                    <div class="FF-C-H">Our Services</div>
-                    <div onclick="Wscroll()">Designing</div>
-                    <div onclick="Wscroll()">Development</div>
-                    <div onclick="Wscroll()">Media Marketing</div>
-                </div>
-                 <div class="FF-C">
-                    <div class="FF-C-H">Quick Links</div>
-                    <div onclick="Hscroll()">Home</div>
-                    <div onclick="Pscroll()">Portfolio</div>
-                    <div onclick="Tescroll()">Testimonials</div>
-                </div>
-                </div>
-                <hr style="width: 85%;margin-left: 5%;">
-                <div class="CPR">
-                    <div>Copyright © 2022 IDOT .Inc.</div>
-                    <div> All rights reserved</div>
-                </div>
-                </div>
-            <!-- <img src="/elephant.png" alt="" class="F-ele"> -->
-            <!-- <img src="footer-bg.png" alt="" class="F-img"> -->
-        </div>
-        <!-- <div class="footspace" id="footer"> -->
-            <!-- <div class="H-foot">CONTACT</div>
-                <div class="F-logo">
-                    <div><img src="/Logo-graphics.png" alt=""></div>
-                    <div><img src="/idotstudioz.png" alt=""></div>
-                </div>
-                <img src="logo.png" alt="" class="f-logo">
-                <img src="fullpic.png" alt="" class="foot-E">
-                <img src="foot.svg" alt="" class="foot-bg1">
-                <img src="" alt="">
-                <div class="F-contact">
-                    <div class="input">
-                        <input type="text" placeholder="Name" size="800">
-                        <input type="text" placeholder="Email">
-                    </div>
-                    <textarea cols="50" rows="6" placeholder="Type Something"></textarea>
-                </div>
-                <img src="foot-bg.svg" alt="" class="foot-bg2"> -->
-            <!-- </div> -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="index.js"></script>
-        <script>
-            AOS.init();
-            </script>
-    </body>
+
+    <!-- backto-top-area-start -->
+    <button class="scroll-top scroll-to-target d-md-none" data-target="html">
+      <i class="far fa-angle-double-up"></i>
+  </button>
+    <!-- backto-top-area-end -->
+
+
+    <!-- JS here -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/counterup.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
