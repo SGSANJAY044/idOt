@@ -4442,7 +4442,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .social-icon-1 {
-    color: var(--tp-theme-1);
+    color: rgb(69, 69, 240);
 }
 
 @media (max-width: 767px) {
@@ -4470,7 +4470,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .social-icon-3 {
-    color: red;
+    color: rgb(228, 92, 171);
 }
 
 @media (max-width: 767px) {
@@ -4484,7 +4484,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .social-icon-4 {
-    color: #1DA1F2;
+    color: #1df248;
 }
 
 .social-icon-4:hover {
